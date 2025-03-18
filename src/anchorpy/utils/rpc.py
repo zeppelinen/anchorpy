@@ -6,7 +6,7 @@ from typing import NamedTuple, Optional, Union, cast
 from solana.rpc.async_api import AsyncClient
 from solana.rpc.commitment import Commitment, Confirmed, Finalized, Processed
 from solana.rpc.core import RPCException
-from solana.transaction import Transaction
+from .transaction import Transaction
 from solders.account import Account
 from solders.account_decoder import UiAccountEncoding
 from solders.commitment_config import CommitmentLevel
@@ -16,6 +16,7 @@ from solders.rpc.config import RpcAccountInfoConfig
 from solders.rpc.requests import GetMultipleAccounts, batch_to_json
 from solders.rpc.responses import GetMultipleAccountsResp, RPCError, batch_from_json
 from solders.signature import Signature
+from solders.solders import Transaction
 from toolz import concat, partition_all
 
 from anchorpy.program.common import AddressType, translate_address

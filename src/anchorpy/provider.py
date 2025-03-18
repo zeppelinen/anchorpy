@@ -10,7 +10,7 @@ from typing import List, Optional, Sequence, Union
 from solana.rpc import types
 from solana.rpc.async_api import AsyncClient
 from solana.rpc.commitment import Confirmed, Finalized, Processed
-from solana.transaction import Transaction
+from .utils.transaction import Transaction
 from solders.keypair import Keypair
 from solders.pubkey import Pubkey
 from solders.rpc.responses import SimulateTransactionResp
